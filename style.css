@@ -3,32 +3,64 @@
     padding: 0%;
     box-sizing: border-box;
 }
-/* Letra tamaño */
+
+
+
+/* Body */
 html {
     font-size: 10px;
+    overflow: hidden;
 }
-/* Fondo de pagina */
+
+
+
 .fondo {
     background-color: #fff;
+    overflow: hidden;
 }
-/* Fin fondo de pagina */
-header {
-    display: flex;
+/* Fin body */
+
+
+
+/* Header-secciones */
+.container-logo {
+    width: 200px;
 }
-/*Tamaño logo*/
+
+
+
 .image {
     width: 10%;
+    height: auto;
 }
-/*Fin logo*/
-.beneficios {
-        text-align: center;
-        font-style: italic;
-        font-size: 4rem;
+
+
+
+header {
+    background-color: #00f365;
+    display: flex;
 }
-/* Fuente encabezado */
+
+
+
+header nav ul li {
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+
+header nav ul li:hover {
+    background-color: #00f365;
+    transition: 1s;
+    font-size: 1.5rem;
+}
+
+
 .container-encabezado {
     width: 100%;
 }
+
+
 .encabezado {
     display: flex;
     justify-content: space-evenly;
@@ -38,140 +70,421 @@ header {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 2rem;
     background-color: darkgreen;
-    padding: 4%;
+    padding: 3%;
+    flex-flow: row wrap;
 }
+
+
+@media screen and(max-width: 1024px){
+    .encabezado {
+        justify-content: start;
+    }
+}
+
+
+
 .encabezado li {
     margin: 10px;
 }
+
+
+
 .inicios {
     text-decoration: none;
     color: black;
 }
-/* Fuente de Inicio */
+/*Fin header*/
+
+
+/* Section-1 */
 .detalle {
     display: flex;
     flex-direction: row-reverse;
 }
-.principal {
-    font-weight: bold;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.5em;
+
+
+.padre {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: rgba(46, 204, 113, 33);
 }
-/* Fin de la fuente */
-/* Producto */
-.letra {
-    font-weight: bold;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 1.5em;
+.beneficios {
+    display: flex;
+    align-content: center;
+    width: 95%;
+    font-style: italic;
+    font-size: 4.5rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: #53e08e;
+    border: 2px solid white;
+    border-radius: 22px;
+    padding: 10px;
 }
-.posicion {
+
+
+.parr {
+    text-align: center;
+    font-size: 18px;
+    margin: 0 15px;
+    margin-bottom: 50px;
+}
+
+
+
+.inicio {
+    width: 30%;
+    overflow: hidden;
     display: flex;
     justify-content: center;
 }
-.medio {
+
+
+
+@media screen and(max-width: 1024px) {
+    .detalle {
+        flex-direction: column;
+    }
+    .padre {
+        width: 100%;
+    }
+    .inicio {
+        display: none;
+    }
+}
+/* Fin section-1 */
+
+
+
+/* Bootstrap productos */
+.card {
+    background: linear-gradient(145deg, #92918ff8, #ffffff);
+    box-shadow: 9.91px 9.91px 15px #d1d2d3, -9.91px -9.91px 15px #fff;
+}
+
+
+
+.bg-arreglo {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    background-color: #2ECC71;
 }
-.coco {
-    width: 50%;
+
+
+
+.unidades {
+    color: #53e08e;
 }
-.ricino {
-    width: 70%;
+
+
+
+button, input, optgroup, select, textarea {
+    font-size: inherit;
+    line-height: inherit;
+    font-size: 1.5rem;
 }
-.almendra {
-    width: 70%;
+
+
+
+.cantidad  {
+    text-align: center;
+    padding: 0.5rem 0;
+    width: 20%;
+    border: 2px solid #aaa;
+    border-radius: 10%;
 }
-/* Fin producto */
-/* Promociones */
-.promocio1 {
-    width: 90%;
+/* Fin Bootstrap */
+
+
+
+/* Bootstrap usuario */
+.form {
+    background-color: #fff;
+    margin: auto;
+    max-width: 400px;
+    border-radius: 1em;
+    padding: 3.5em 1.5em
 }
-.promocio2 {
-    width: 70%;
+/* Fin bootstrap usuario */
+
+
+
+/* Seccion Ubicacion */
+#ubicacion {
+    display: flex;
+    justify-content: flex-start;
 }
-.promocion3 {
-    width: 90%;
+
+
+.container-mapa {
+    margin: 50px auto;
+    width: 80%;
 }
-/* Fin promocion */
-/* footer */
+
+
+.container-mapa iframe {
+    width: 100%;
+}
+
+
+.principal {
+    font-weight: bold;
+    list-style: none;
+    text-align: center;
+    font-size: 2rem;
+    }
+/* Fin seccion ubicacion */
+
+
+
+/* Footer */
+footer {
+    padding: 50px 10%;
+    background-color: #2ECC71;
+}
+
+
+
 .parent {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "a a a r"
+        "b b b r";
     width: 100%;
-    background-color: darkgreen;
 }
+
+
+
+.div1 {
+    grid-area: a;
+}
+
+
+
+.div1 ul li {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 5px;
+    align-items: center;
+}
+
+
+
+.medio-pago {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+
+
 .div2 {
     align-self: flex-end;
     justify-self: end;
-    width: 100px;
+    width: 155px;
+    text-decoration: none;
+    color: black;
+    grid-area: r;
 }
-.div2 ul li {
-    width: 100px;
-}
+
+
+
 .div2 ul {
     display: flex;
     flex-direction: column;
 }
-.medio-pago {
-    font-size: 1.5rem;
+
+
+
+.div2 ul li {
+    display: flex;
+    justify-content: space-around;
+    width: 100px;
+    font-size: 2.5rem;
 }
+
+
+
+.div2 ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.div3 {
+    grid-area: b;
+}
+
+
+
+.div3 ul li {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 5px;
+    align-items: center;
+}
+
+
+
 .medio-envio {
+    font-weight: 600;
     font-size: 1.5rem;
 }
-.redes {
-    font-size: 2rem;
-}
+
+
+
 .envio-color {
     background-color: #fff;
 }
-/* Medios de pago y envios */
+
+
+
+@media screen and (max-width: 680px){
+    .parent {
+        grid-template-areas:
+            "a a"
+            "b b"
+            "r r";
+    }
+    .div1 ul {
+        flex-direction: column;
+    }
+    .div3 ul {
+        flex-direction: column;
+        grid-area: r;
+    }
+}
+/* Fin footer */
+
+
+
+/* Medios de pago y envios img */
 .visa {
-    width: 50%;
+    width: auto;
+    height: 25px;
+    margin: 0 5px 5px 0;
+    border: 1px solid #00000012;
 }
+
+
+
 .mastercard {
-    width: 50%;
+    width: auto;
+    height: 35px;
+    margin: 0 5px 5px 0;
+    border: 1px solid #00000012;
 }
+
+
+
 .mercadopago {
-    width: 50%;
+    width: auto;
+    height: 45px;
+    margin: 0 5px 5px 0;
+    border: 1px solid #00000012;
 }
+
+
+
 .naranja {
-    width: 100%;
+    width: auto;
+    height: 35px;
+    margin: 0 5px 5px 0;
+    border: 1px solid #00000012;
 }
+
+
+
 .cencosud {
-    width: 50%;
+    width: auto;
+    height: 35px;
+    margin: 0 5px 5px 0;
+    border: 1px solid #00000012;
 }
+
+
+
 .nativa {
-    width: 100%;
+    width: auto;
+    height: 35px;
+    margin: 0 5px 5px 0;
+    border: 1px solid #00000012;
 }
+
+
+
 .pago-facil {
-    width: 50%;
+    width: auto;
+    height: 35px;
+    margin: 0 5px 5px 0;
+    border: 1px solid #00000012;
 }
+
+
+
 .rapipago {
-    width: 50%;
+    width: auto;
+    height: 45px;
+    margin: 0 5px 5px 0;
+    border: 1px solid #00000012;
 }
+
+
+
 .oca {
-    width: 100%;
+    width: auto;
+    height: 65px;
+    margin: 0 5px 5px 0;
+    border: 1px solid #00000012;
 }
+
+
+
 .andreani {
-    width: 40%;
+    width: auto;
+    height: 55px;
+    margin: 0 5px 5px 0;
+    border: 1px solid #00000012;
 }
+
+
+
 .correo {
-    width: 40%;
+    width: auto;
+    height: 55px;
+    margin: 0 5px 5px 0;
+    border: 1px solid #00000012;
 }
+/* Fin medios de pago y envios img */
+
+
+
 /* Contacto */
 .color {
     display: flex;
     flex-direction: row;
     list-style: none;
 }
+
+
+
 .facebook {
-    width: 10%;
+    width: 35%;
 }
+
+
+
 .instagram {
-    width: 10%;
+    width: 35%;
 }
+
+
+
 .whatsapp { 
-    width: 10%;
+    width: 35%;
 }
 /* Fin contacto */
