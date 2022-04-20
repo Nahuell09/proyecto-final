@@ -2,6 +2,7 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -9,14 +10,13 @@
 /* Body */
 html {
     font-size: 10px;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 
-
 .fondo {
-    background-color: #fff;
-    overflow: hidden;
+    background-color: rgba(231, 244, 235);
+    overflow-x: hidden;
 }
 /* Fin body */
 
@@ -27,27 +27,20 @@ html {
     width: 200px;
 }
 
-
-
 .image {
-    width: 10%;
+    width: 100%;
     height: auto;
 }
 
-
-
 header {
-    background-color: #00f365;
+    background-color: #2ECC71;
     display: flex;
 }
-
-
 
 header nav ul li {
     padding: 8px 12px;
     border-radius: 5px;
 }
-
 
 header nav ul li:hover {
     background-color: #00f365;
@@ -55,11 +48,9 @@ header nav ul li:hover {
     font-size: 1.5rem;
 }
 
-
 .container-encabezado {
     width: 100%;
 }
-
 
 .encabezado {
     display: flex;
@@ -69,31 +60,28 @@ header nav ul li:hover {
     font-weight: bold;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 2rem;
-    background-color: darkgreen;
     padding: 3%;
     flex-flow: row wrap;
 }
 
 
-@media screen and(max-width: 1024px){
+@media screen and (max-width: 1024px) {
     .encabezado {
         justify-content: start;
     }
 }
 
 
-
 .encabezado li {
     margin: 10px;
 }
-
-
 
 .inicios {
     text-decoration: none;
     color: black;
 }
-/*Fin header*/
+/* Fin header */
+
 
 
 /* Section-1 */
@@ -102,36 +90,38 @@ header nav ul li:hover {
     flex-direction: row-reverse;
 }
 
-
-.padre {
-    display: flex;
+.padre{
+    display:flex;
     justify-content: space-between;
     flex-direction: column;
-    background-color: rgba(46, 204, 113, 33);
-}
-.beneficios {
-    display: flex;
-    align-content: center;
-    width: 95%;
-    font-style: italic;
-    font-size: 4.5rem;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 50px;
-    background-color: #53e08e;
-    border: 2px solid white;
-    border-radius: 22px;
-    padding: 10px;
+    background-color:  rgba(46, 204, 113 , .33);
+    width: 70%;
 }
 
 
-.parr {
-    text-align: center;
+.beneficios{
+        display:flex;
+        align-content:flex-start;
+        justify-content: center;
+        width: 95%;
+        font-style: italic;
+        font-size: 4.5rem;
+        text-align: center;
+        margin:0 auto;
+        margin-top: 50px;
+        background-color: #53e08e;
+        border:2px solid white;
+        border-radius: 22px;
+        padding: 10px;
+}
+
+
+.parr{
+    text-align:center;
     font-size: 18px;
     margin: 0 15px;
     margin-bottom: 50px;
 }
-
 
 
 .inicio {
@@ -142,8 +132,7 @@ header nav ul li:hover {
 }
 
 
-
-@media screen and(max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .detalle {
         flex-direction: column;
     }
@@ -165,7 +154,6 @@ header nav ul li:hover {
 }
 
 
-
 .bg-arreglo {
     display: flex;
     justify-content: center;
@@ -173,11 +161,9 @@ header nav ul li:hover {
 }
 
 
-
 .unidades {
     color: #53e08e;
 }
-
 
 
 button, input, optgroup, select, textarea {
@@ -185,7 +171,6 @@ button, input, optgroup, select, textarea {
     line-height: inherit;
     font-size: 1.5rem;
 }
-
 
 
 .cantidad  {
@@ -246,7 +231,6 @@ footer {
 }
 
 
-
 .parent {
     display: grid;
     grid-template-areas:
@@ -256,11 +240,9 @@ footer {
 }
 
 
-
 .div1 {
     grid-area: a;
 }
-
 
 
 .div1 ul li {
@@ -272,12 +254,10 @@ footer {
 }
 
 
-
 .medio-pago {
     font-weight: 600;
     font-size: 1.5rem;
 }
-
 
 
 .div2 {
@@ -290,12 +270,10 @@ footer {
 }
 
 
-
 .div2 ul {
     display: flex;
     flex-direction: column;
 }
-
 
 
 .div2 ul li {
@@ -306,18 +284,15 @@ footer {
 }
 
 
-
 .div2 ul li a {
     text-decoration: none;
     color: black;
 }
 
 
-
 .div3 {
     grid-area: b;
 }
-
 
 
 .div3 ul li {
@@ -329,19 +304,15 @@ footer {
 }
 
 
-
 .medio-envio {
     font-weight: 600;
     font-size: 1.5rem;
 }
 
 
-
 .envio-color {
     background-color: #fff;
 }
-
-
 
 @media screen and (max-width: 680px){
     .parent {
@@ -369,90 +340,60 @@ footer {
     margin: 0 5px 5px 0;
     border: 1px solid #00000012;
 }
-
-
-
 .mastercard {
     width: auto;
     height: 35px;
     margin: 0 5px 5px 0;
     border: 1px solid #00000012;
 }
-
-
-
 .mercadopago {
     width: auto;
     height: 45px;
     margin: 0 5px 5px 0;
     border: 1px solid #00000012;
 }
-
-
-
 .naranja {
     width: auto;
     height: 35px;
     margin: 0 5px 5px 0;
     border: 1px solid #00000012;
 }
-
-
-
 .cencosud {
     width: auto;
     height: 35px;
     margin: 0 5px 5px 0;
     border: 1px solid #00000012;
 }
-
-
-
 .nativa {
     width: auto;
     height: 35px;
     margin: 0 5px 5px 0;
     border: 1px solid #00000012;
 }
-
-
-
 .pago-facil {
     width: auto;
     height: 35px;
     margin: 0 5px 5px 0;
     border: 1px solid #00000012;
 }
-
-
-
 .rapipago {
     width: auto;
     height: 45px;
     margin: 0 5px 5px 0;
     border: 1px solid #00000012;
 }
-
-
-
 .oca {
     width: auto;
     height: 65px;
     margin: 0 5px 5px 0;
     border: 1px solid #00000012;
 }
-
-
-
 .andreani {
     width: auto;
     height: 55px;
     margin: 0 5px 5px 0;
     border: 1px solid #00000012;
 }
-
-
-
 .correo {
     width: auto;
     height: 55px;
@@ -471,17 +412,14 @@ footer {
 }
 
 
-
 .facebook {
     width: 35%;
 }
 
 
-
 .instagram {
     width: 35%;
 }
-
 
 
 .whatsapp { 
